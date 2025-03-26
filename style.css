@@ -1,0 +1,94 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --code-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 3px solid var(--secondary);
+    margin-bottom: 40px;
+    padding: 1rem 0;
+}
+
+.post {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.date {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+code {
+    background: var(--code-bg);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+pre {
+    background: var(--code-bg);
+    padding: 15px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.tags {
+    margin-top: 15px;
+    font-size: 0.85em;
+}
+
+.tag {
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 3px 8px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.filter-section {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+/* Add to style.css */
+/* ================ */
+.tag-filter {
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+.tag-filter:hover {
+    transform: translateY(-2px);
+}
+
+.filter-active {
+    background: var(--secondary) !important;
+    color: white !important;
+    border-color: var(--primary) !important;
+}
+
+/* Add to style.css */
+.conceptual-content {
+    border-left: 3px solid var(--secondary);
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.best-practice {
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 4px;
+}
